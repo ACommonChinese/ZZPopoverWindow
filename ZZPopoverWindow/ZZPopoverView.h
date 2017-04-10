@@ -18,5 +18,8 @@
 @property (nonatomic, weak) ZZPopoverWindow *containerView;
 @property (nonatomic) UIView *atView;
 
+@property (nonatomic) CGAffineTransform startTransform;
+@property (nonatomic) CGAffineTransform endTransform;
+
 - (void)setup;
 @end

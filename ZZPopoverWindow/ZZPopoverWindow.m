@@ -40,11 +40,11 @@
     return self;
 }
 
-- (void)commonInit {
-    _isiOS7              = ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending);
+- (void)commonInit { // NSOrderedAscending
+    _isiOS7              = ([[[UIDevice currentDevice] systemVersion] compare:@"7.0"] == NSOrderedAscending);
     self.arrowSize       = CGSizeMake(10.0, 9.0);
-    self.animationIn     = 0.4;
-    self.animationOut    = 0.3;
+    self.animationIn     = 0.25;
+    // self.animationOut = 0.0;
     self.animationSpring = YES;
     self.showShadow      = YES;
     self.showArrow       = YES;
@@ -105,6 +105,59 @@
 }
 
 - (void)show {
+    if (self.showArrow || self.popoverPosition == ZZPopoverPositionAny) {
+        self.popView.transform = CGAffineTransformMakeScale(0.0, 0.0);
+        self.popView.endTransform = CGAffineTransformIdentity;
+    } else {
+        switch (self.popoverPosition) {
+            case ZZPopoverPositionDown:
+            case ZZPopoverPositionUp: {
+                self.popView.startTransform = self.popView.transform = CGAffineTransformMakeScale(1.0, 0.0);
+                self.popView.endTransform = CGAffineTransformMakeScale(1.0, 1.0);
+                break;
+            }
+            case ZZPopoverPositionLeft:
+            case ZZPopoverPositionRight: {
+                self.popView.startTransform = self.popView.transform = CGAffineTransformMakeScale(0.0, 1.0);
+                self.popView.endTransform = CGAffineTransformMakeScale(1.0, 1.0);
+            }
+            default:
+                break;
+        }
+    }
+    
+    // self.popView.transform = CGAffineTransformMakeScale(0.0, 0.0);
+    
+    if (self.animationSpring && _isiOS7) {
+        [UIView animateWithDuration:self.animationIn delay:0
+             usingSpringWithDamping:0.7
+              initialSpringVelocity:3
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             self.popView.transform = self.popView.endTransform;
+                         }
+                         completion:^(BOOL finished) {
+                             if (self.didShowHandler) {
+                                 self.didShowHandler();
+                             }
+                         }];
+    } else {
+        [UIView animateWithDuration:self.animationIn
+                              delay:0
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             self.popView.transform = self.popView.endTransform;
+                         }
+                         completion:^(BOOL finished) {
+                             if (self.didShowHandler) {
+                                 self.didShowHandler();
+                             }
+                         }];
+    }
+}
+
+/**
+- (void)show {
     self.popView.transform = CGAffineTransformMakeScale(0.0, 0.0);
     if (self.animationSpring && _isiOS7) {
         [UIView animateWithDuration:self.animationIn delay:0
@@ -133,10 +186,22 @@
                          }];
     }
 }
+*/
 
 - (void)dismiss {
     [UIView animateWithDuration:self.animationOut delay:0.0 options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionCurveEaseInOut animations:^{
-        self.popView.transform = CGAffineTransformMakeScale(0.0001, 0.0001);
+        if (self.animationOut <= 0.0001) {
+            self.popView.transform = CGAffineTransformIdentity;
+        } else {
+            // http://stackoverflow.com/questions/2690337/get-just-the-scaling-transformation-out-of-cgaffinetransform
+            CGAffineTransform t = self.popView.startTransform;
+            double x = sqrt(t.a * t.a + t.c * t.c);
+            x = x > 0 ? x : 0.0001;
+            double y = sqrt(t.b * t.b + t.d * t.d);
+            y = y > 0 ? y : 0.0001;
+            CGAffineTransform transform = CGAffineTransformScale(self.popView.transform, x, y);
+            self.popView.transform = transform;
+        }
     } completion:^(BOOL finished) {
         // [self.contentView removeFromSuperview];
         [self.popView removeFromSuperview];
