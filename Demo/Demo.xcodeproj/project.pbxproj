@@ -16,10 +16,10 @@
 		DAC8358E1C9ECF1200F2040A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC8358D1C9ECF1200F2040A /* Assets.xcassets */; };
 		DAC835911C9ECF1200F2040A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC8358F1C9ECF1200F2040A /* LaunchScreen.storyboard */; };
 		DAC8359A1C9ECF7400F2040A /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC835991C9ECF7400F2040A /* TwoViewController.m */; };
-		DAC835A21C9ED10C00F2040A /* ZZPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8359D1C9ED10C00F2040A /* ZZPopoverView.m */; };
-		DAC835A31C9ED10C00F2040A /* ZZPopoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8359F1C9ED10C00F2040A /* ZZPopoverWindow.m */; };
-		DAC835A41C9ED10C00F2040A /* ZZPositionList.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC835A11C9ED10C00F2040A /* ZZPositionList.m */; };
 		DAC835A61C9EDA2600F2040A /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAC835A51C9EDA2600F2040A /* test.jpg */; };
+		DAE9C6441E9B83000051BD48 /* ZZPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE9C63F1E9B83000051BD48 /* ZZPopoverView.m */; };
+		DAE9C6451E9B83000051BD48 /* ZZPopoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE9C6411E9B83000051BD48 /* ZZPopoverWindow.m */; };
+		DAE9C6461E9B83000051BD48 /* ZZPositionList.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE9C6431E9B83000051BD48 /* ZZPositionList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,13 +38,13 @@
 		DAC835921C9ECF1200F2040A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC835981C9ECF7400F2040A /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		DAC835991C9ECF7400F2040A /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
-		DAC8359C1C9ED10C00F2040A /* ZZPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPopoverView.h; sourceTree = "<group>"; };
-		DAC8359D1C9ED10C00F2040A /* ZZPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPopoverView.m; sourceTree = "<group>"; };
-		DAC8359E1C9ED10C00F2040A /* ZZPopoverWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPopoverWindow.h; sourceTree = "<group>"; };
-		DAC8359F1C9ED10C00F2040A /* ZZPopoverWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPopoverWindow.m; sourceTree = "<group>"; };
-		DAC835A01C9ED10C00F2040A /* ZZPositionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPositionList.h; sourceTree = "<group>"; };
-		DAC835A11C9ED10C00F2040A /* ZZPositionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPositionList.m; sourceTree = "<group>"; };
 		DAC835A51C9EDA2600F2040A /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		DAE9C63E1E9B83000051BD48 /* ZZPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPopoverView.h; sourceTree = "<group>"; };
+		DAE9C63F1E9B83000051BD48 /* ZZPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPopoverView.m; sourceTree = "<group>"; };
+		DAE9C6401E9B83000051BD48 /* ZZPopoverWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPopoverWindow.h; sourceTree = "<group>"; };
+		DAE9C6411E9B83000051BD48 /* ZZPopoverWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPopoverWindow.m; sourceTree = "<group>"; };
+		DAE9C6421E9B83000051BD48 /* ZZPositionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPositionList.h; sourceTree = "<group>"; };
+		DAE9C6431E9B83000051BD48 /* ZZPositionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPositionList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +77,7 @@
 		DAC835801C9ECF1200F2040A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DAE9C63D1E9B83000051BD48 /* ZZPopoverWindow */,
 				DAC835841C9ECF1200F2040A /* AppDelegate.h */,
 				DAC835851C9ECF1200F2040A /* AppDelegate.m */,
 				DAC8358A1C9ECF1200F2040A /* Main.storyboard */,
@@ -88,7 +89,6 @@
 				DAC835981C9ECF7400F2040A /* TwoViewController.h */,
 				DAC835991C9ECF7400F2040A /* TwoViewController.m */,
 				DAC835A51C9EDA2600F2040A /* test.jpg */,
-				DAC8359B1C9ED0F200F2040A /* ZZPopoverWindow */,
 				DAC8358D1C9ECF1200F2040A /* Assets.xcassets */,
 				DAC8358F1C9ECF1200F2040A /* LaunchScreen.storyboard */,
 				DAC835921C9ECF1200F2040A /* Info.plist */,
@@ -105,15 +105,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DAC8359B1C9ED0F200F2040A /* ZZPopoverWindow */ = {
+		DAE9C63D1E9B83000051BD48 /* ZZPopoverWindow */ = {
 			isa = PBXGroup;
 			children = (
-				DAC8359C1C9ED10C00F2040A /* ZZPopoverView.h */,
-				DAC8359D1C9ED10C00F2040A /* ZZPopoverView.m */,
-				DAC8359E1C9ED10C00F2040A /* ZZPopoverWindow.h */,
-				DAC8359F1C9ED10C00F2040A /* ZZPopoverWindow.m */,
-				DAC835A01C9ED10C00F2040A /* ZZPositionList.h */,
-				DAC835A11C9ED10C00F2040A /* ZZPositionList.m */,
+				DAE9C63E1E9B83000051BD48 /* ZZPopoverView.h */,
+				DAE9C63F1E9B83000051BD48 /* ZZPopoverView.m */,
+				DAE9C6401E9B83000051BD48 /* ZZPopoverWindow.h */,
+				DAE9C6411E9B83000051BD48 /* ZZPopoverWindow.m */,
+				DAE9C6421E9B83000051BD48 /* ZZPositionList.h */,
+				DAE9C6431E9B83000051BD48 /* ZZPositionList.m */,
 			);
 			path = ZZPopoverWindow;
 			sourceTree = "<group>";
@@ -190,14 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE9C6461E9B83000051BD48 /* ZZPositionList.m in Sources */,
 				DAC835891C9ECF1200F2040A /* OneViewController.m in Sources */,
-				DAC835A41C9ED10C00F2040A /* ZZPositionList.m in Sources */,
 				DA0E5D441CA2BCF800C24A62 /* XibView.m in Sources */,
-				DAC835A21C9ED10C00F2040A /* ZZPopoverView.m in Sources */,
 				DAC835861C9ECF1200F2040A /* AppDelegate.m in Sources */,
 				DAC835831C9ECF1200F2040A /* main.m in Sources */,
+				DAE9C6451E9B83000051BD48 /* ZZPopoverWindow.m in Sources */,
+				DAE9C6441E9B83000051BD48 /* ZZPopoverView.m in Sources */,
 				DAC8359A1C9ECF7400F2040A /* TwoViewController.m in Sources */,
-				DAC835A31C9ED10C00F2040A /* ZZPopoverWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
