@@ -53,6 +53,7 @@
     self.popover             = [[ZZPopoverWindow alloc] init];
     self.popover.popoverPosition = ZZPopoverPositionRight;
     self.popover.contentView = imageView;
+    self.popover.showArrow = NO;
     [self.popover showAtView:button];
 }
 

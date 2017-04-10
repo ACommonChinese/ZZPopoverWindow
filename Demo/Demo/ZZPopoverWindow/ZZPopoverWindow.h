@@ -24,14 +24,14 @@
 @property (nonatomic) CGSize arrowSize;
 
 /**
- *  The popover animation show in duration, default is 0.4;
- *  pop显示的动画时间，默认0.4秒
+ *  The popover animation show in duration, default is 0.25;
+ *  pop显示的动画时间，默认0.25秒
  */
 @property (nonatomic) CGFloat animationIn;
 
 /**
  *  The popover animation dismiss duration, default is 0.3;
- *  pop消失的动画时间，默认0.3秒
+ *  pop消失的动画时间，默认0.0秒
  */
 @property (nonatomic) CGFloat animationOut;
 
