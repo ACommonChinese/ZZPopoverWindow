@@ -81,6 +81,7 @@
 
 - (void)setOrigin {
     if (self.positionList.isValid == NO) {
+        @throw [NSException exceptionWithName:@"ZZPopoverWindow exception" reason:@"找不到合适的方向，这可能是因为你要显示的视图过大， 请尝试设置无箭头样式：yourPopoverWindow.showArrow = NO，try again." userInfo:nil];
         return;
     }
     

@@ -4,7 +4,8 @@
 //
 //  Created by 刘威振 on 3/17/16.
 //  Copyright © 2016 LiuWeiZhen. All rights reserved.
-//
+//  https://github.com/ACommonChinese/ZZPopoverWindow
+//  email: liuxing8807@126.com
 
 #import <UIKit/UIKit.h>
 #import "ZZPopoverView.h"

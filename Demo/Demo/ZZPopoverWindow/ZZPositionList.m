@@ -58,38 +58,16 @@
         return nil; // 没有找到可用的方向（下上右左已全部试过）
     }
     
-    ZZPopoverPositionObject *positionObj = nil;
-    switch (self.current.position) {
-        case ZZPopoverPositionDown: {
-            positionObj = [self positionObjectWithPosition:ZZPopoverPositionUp];
-            if (positionObj.fail == YES) {
-                return [self nextPositionObject];
-            }
-        } break;
-        case ZZPopoverPositionUp: {
-            positionObj = [self positionObjectWithPosition:ZZPopoverPositionDown];
-            if (positionObj.fail == YES) {
-                return [self nextPositionObject];
-            }
-        } break;
-        case ZZPopoverPositionRight: {
-            positionObj = [self positionObjectWithPosition:ZZPopoverPositionLeft];
-            if (positionObj.fail == YES) {
-                return [self nextPositionObject];
-            }
-        } break;
-        case ZZPopoverPositionLeft: {
-            positionObj = [self positionObjectWithPosition:ZZPopoverPositionRight];
-            if (positionObj.fail == YES) {
-                return [self nextPositionObject];
-            }
-        } break;
-        default:
-            break;
+    ZZPopoverPositionObject *targetPosition = nil;
+    if (self.up.fail == YES && self.down.fail == NO) { // 如果up失败了，当优先找down
+        targetPosition = self.down;
+    } else if (self.left.fail == YES && self.right.fail == NO) { // 如果left失败，当优先找right
+        targetPosition = self.right;
+    } else { // 依顺序找
+        targetPosition = self.down.fail == NO ? self.down : self.up.fail == NO ? self.up : self.right.fail == NO ? self.right : self.left.fail == NO ? self.left : nil;
     }
-    
-    self.current = positionObj;
-    return positionObj;
+    self.current = targetPosition;
+    return targetPosition;
 }
 
 - (BOOL)isValid {

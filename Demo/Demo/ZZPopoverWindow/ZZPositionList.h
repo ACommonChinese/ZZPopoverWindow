@@ -4,7 +4,8 @@
 //
 //  Created by 刘威振 on 3/19/16.
 //  Copyright © 2016 LiuWeiZhen. All rights reserved.
-//
+//  https://github.com/ACommonChinese/ZZPopoverWindow
+//  email: liuxing8807@126.com
 
 #import <Foundation/Foundation.h>
 /**
@@ -24,13 +25,13 @@ typedef NS_ENUM(NSInteger, ZZPopoverPosition) {
      */
     ZZPopoverPositionUp,
     /**
-     *  弹框在控件左侧
-     */
-    ZZPopoverPositionLeft,
-    /**
      *  弹框在控件右侧
      */
     ZZPopoverPositionRight,
+    /**
+     *  弹框在控件左侧
+     */
+    ZZPopoverPositionLeft,
 };
 
 // ------------------------------------------------------
