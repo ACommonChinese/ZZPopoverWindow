@@ -105,7 +105,9 @@
             // reset popView's frame
             self.arrowShowPoint      = CGPointMake(CGRectGetMidX(self.atViewFrame), CGRectGetMaxY(self.atViewFrame));
             CGRect popViewFrame      = self.frame;
-            popViewFrame.origin.x    = self.arrowShowPoint.x - popViewFrame.size.width * 0.5;
+            CGFloat originX = self.arrowShowPoint.x - popViewFrame.size.width * 0.5;
+            originX = originX > 0 ? originX : 0;
+            popViewFrame.origin.x    = originX;
             popViewFrame.origin.y    = self.arrowShowPoint.y;
             self.frame               = popViewFrame;
             
