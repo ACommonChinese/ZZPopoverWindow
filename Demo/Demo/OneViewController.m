@@ -48,24 +48,24 @@
 }
 
 - (IBAction)button2Click:(UIButton *)button {
-    UIImageView *imageView   = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-    imageView.image          = [UIImage imageNamed:@"test.jpg"];
-    self.popover             = [[ZZPopoverWindow alloc] init];
+    UIImageView *imageView       = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    imageView.image              = [UIImage imageNamed:@"test.jpg"];
+    self.popover                 = [[ZZPopoverWindow alloc] init];
     self.popover.popoverPosition = ZZPopoverPositionRight;
-    self.popover.contentView = imageView;
-    self.popover.showArrow = NO;
+    self.popover.contentView     = imageView;
+    self.popover.showArrow       = NO;
     [self.popover showAtView:button];
 }
 
 - (IBAction)button3Click:(UIButton *)button {
     UILabel *label               = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    label.backgroundColor        = [UIColor redColor];
     label.numberOfLines          = 0;
     label.text                   = @"刘威振\nliuxing8807@126.com";
     label.font                   = [UIFont systemFontOfSize:30.0f];
     label.textAlignment          = NSTextAlignmentCenter;
     self.popover                 = [[ZZPopoverWindow alloc] init];
     self.popover.contentView     = label;
-    self.popover.backgroundColor = [UIColor cyanColor];
     [self.popover showAtView:button];
 }
 
@@ -84,7 +84,6 @@
     XibView *xibView = [XibView xibView];
     self.popover.contentView = xibView;
     self.popover.popoverPosition = ZZPopoverPositionUp;
-    self.popover.backgroundColor = [UIColor blackColor];
     [self.popover showAtView:button];
 }
 

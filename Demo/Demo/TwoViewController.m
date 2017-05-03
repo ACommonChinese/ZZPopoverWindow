@@ -30,7 +30,6 @@
     self.popover = [[ZZPopoverWindow alloc] init];
     UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 200)];
     contentView.backgroundColor = [UIColor blackColor];
-    self.popover.backgroundColor = [UIColor redColor];
     self.popover.contentView = contentView;
     [self.popover showAtView:button];
 }
