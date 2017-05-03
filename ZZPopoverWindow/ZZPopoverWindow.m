@@ -53,6 +53,14 @@
     self.backgroundColor = [UIColor whiteColor];
 }
 
+- (void)setShowArrow:(BOOL)showArrow {
+    _showArrow = showArrow;
+    if (_showArrow == NO) {
+        self.contentInset = UIEdgeInsetsZero;
+        self.arrowSize = CGSizeZero;
+    }
+}
+
 - (void)setBackgroundColor:(UIColor *)backgroundColor {
     [super setBackgroundColor:[UIColor clearColor]];
     self.borderColor = backgroundColor;
