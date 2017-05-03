@@ -78,6 +78,8 @@
  */
 @property (nonatomic, copy) dispatch_block_t didDismissHandler;
 
+@property (nonatomic, readonly) UIColor *borderColor;
+
 - (void)showAtView:(UIView *)atView;
 - (void)showAtView:(UIView *)atView position:(ZZPopoverPosition)position;
 - (void)dismiss;

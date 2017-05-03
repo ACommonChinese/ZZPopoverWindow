@@ -282,7 +282,9 @@
         return;
     }
     UIBezierPath *arrow   = [[UIBezierPath alloc] init];
-    UIColor *contentColor = self.containerView.backgroundColor;
+    // UIColor *contentColor = self.containerView.backgroundColor;
+    // contentColor = [UIColor yellowColor];
+    UIColor *contentColor = self.containerView.borderColor;
     // the point in the ourself view coordinate
     CGPoint arrowPoint    = [self.containerView convertPoint:self.arrowShowPoint toView:self];
     CGSize arrowSize      = self.arrowSize;

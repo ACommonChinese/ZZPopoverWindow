@@ -10,7 +10,7 @@
 
 @interface ZZPopoverWindow ()
 
-@property (nonatomic) UIColor *borderColor;
+@property (nonatomic, readwrite) UIColor *borderColor;
 
 /**
  *  Pop视图
@@ -50,7 +50,8 @@
     self.showArrow       = YES;
     self.contentInset    = UIEdgeInsetsMake(5, 5, 5, 5);
     self.popoverPosition = ZZPopoverPositionDown;
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor colorWithRed:.4 green:.4 blue:.4 alpha:.5];
+    self.borderColor = [UIColor whiteColor];
 }
 
 - (void)setShowArrow:(BOOL)showArrow {
@@ -61,14 +62,14 @@
     }
 }
 
-- (void)setBackgroundColor:(UIColor *)backgroundColor {
-    [super setBackgroundColor:[UIColor clearColor]];
-    self.borderColor = backgroundColor;
-}
+//- (void)setBackgroundColor:(UIColor *)backgroundColor {
+//    [super setBackgroundColor:[UIColor clearColor]];
+//    self.borderColor = backgroundColor;
+//}
 
-- (UIColor *)backgroundColor {
-    return self.borderColor;
-}
+//- (UIColor *)backgroundColor {
+//    return self.borderColor;
+//}
 
 - (void)showAtView:(UIView *)atView {
     [self makeKeyWindow];
