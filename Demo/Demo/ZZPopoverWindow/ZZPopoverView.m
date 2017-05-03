@@ -81,7 +81,7 @@
 
 - (void)setOrigin {
     if (self.positionList.isValid == NO) {
-        @throw [NSException exceptionWithName:@"ZZPopoverWindow exception" reason:@"找不到合适的方向，这可能是因为你要显示的视图过大， 请尝试设置无箭头样式：yourPopoverWindow.showArrow = NO，try again." userInfo:nil];
+        @throw [NSException exceptionWithName:@"ZZPopoverWindow exception" reason:@"找不到合适的视图弹出方向，这可能是因为你要显示的视图过大， 请尝试设置无箭头样式：yourPopoverWindow.showArrow = NO，try again." userInfo:nil];
         return;
     }
     
@@ -105,8 +105,7 @@
             // reset popView's frame
             self.arrowShowPoint      = CGPointMake(CGRectGetMidX(self.atViewFrame), CGRectGetMaxY(self.atViewFrame));
             CGRect popViewFrame      = self.frame;
-            CGFloat originX = self.arrowShowPoint.x - popViewFrame.size.width * 0.5;
-            originX = originX > 0 ? originX : 0;
+            CGFloat originX          = self.arrowShowPoint.x - popViewFrame.size.width * 0.5;
             popViewFrame.origin.x    = originX;
             popViewFrame.origin.y    = self.arrowShowPoint.y;
             self.frame               = popViewFrame;
@@ -116,10 +115,12 @@
                 return;
             }
             
-            if (self.arrowShowPoint.x >= CGRectGetMidX(self.containerView.bounds)) { // atView in the right
+            if (self.arrowShowPoint.x >= CGRectGetMidX(self.containerView.bounds)) { // atView in the right of popoverWindow
                 popViewFrame.origin.x -= (CGRectGetMaxX(popViewFrame) - self.containerView.bounds.size.width + kMinPopMargin);
-            } else { // atView in the left
+                popViewFrame.origin.x = MAX(popViewFrame.origin.x, 0);
+            } else { // atView in the left of popoverWindow
                 popViewFrame.origin.x = kMinPopMargin;
+                popViewFrame.origin.x = MIN(popViewFrame.origin.x, self.containerView.bounds.size.width - popViewFrame.size.width);
             }
             if (CGRectContainsRect(self.containerView.bounds, popViewFrame)) {
                 self.frame = popViewFrame;
@@ -148,10 +149,12 @@
                 return;
             }
             
-            if (self.arrowShowPoint.x >= CGRectGetMidX(self.containerView.bounds)) { // atView in the right
+            if (self.arrowShowPoint.x >= CGRectGetMidX(self.containerView.bounds)) { // atView in the right of popoverWindow
                 popViewFrame.origin.x -= (CGRectGetMaxX(popViewFrame) - self.containerView.bounds.size.width + kMinPopMargin);
-            } else { // atView in the left
+                popViewFrame.origin.x = MAX(popViewFrame.origin.x, 0);
+            } else { // atView in the left of popoverWindow
                 popViewFrame.origin.x = kMinPopMargin;
+                popViewFrame.origin.x = MIN(popViewFrame.origin.x, self.containerView.bounds.size.width - popViewFrame.size.width);
             }
             if (CGRectContainsRect(self.containerView.bounds, popViewFrame)) {
                 self.frame = popViewFrame;
@@ -181,10 +184,12 @@
                 return;
             }
             
-            if (self.arrowShowPoint.y <= CGRectGetMidY(self.containerView.bounds)) { // atView position: up
+            if (self.arrowShowPoint.y <= CGRectGetMidY(self.containerView.bounds)) { // atView in the upper position of popoverWindow
                 popViewFrame.origin.y = kMinPopMargin;
-            } else { // atView position: down
+                popViewFrame.origin.y = MIN(popViewFrame.origin.y, self.containerView.bounds.size.height - popViewFrame.size.height);
+            } else { // atView in the bottom position of popoverWindow
                 popViewFrame.origin.y -= (CGRectGetMaxY(popViewFrame) - self.containerView.bounds.size.height + kMinPopMargin);
+                popViewFrame.origin.y = MAX(popViewFrame.origin.y, 0);
             }
             
             if (CGRectContainsRect(self.containerView.bounds, popViewFrame)) {

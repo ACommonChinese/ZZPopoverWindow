@@ -28,14 +28,15 @@
 
 - (void)itemClick:(UIButton *)button {
     self.popover = [[ZZPopoverWindow alloc] init];
-    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 200)];
-    contentView.backgroundColor = [UIColor blackColor];
+    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    contentView.backgroundColor = [UIColor blueColor];
+    self.popover.showArrow = NO;
     self.popover.contentView = contentView;
     [self.popover showAtView:button];
 }
 
 - (IBAction)button1Click:(UIButton *)button {
-    UIImageView *imageView   = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+    UIImageView *imageView   = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     imageView.image          = [UIImage imageNamed:@"test.jpg"];
     self.popover             = [[ZZPopoverWindow alloc] init];
     self.popover.showArrow   = NO;
