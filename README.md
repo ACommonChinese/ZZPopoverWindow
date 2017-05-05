@@ -36,3 +36,7 @@ pod 'ZZPopoverWindow', '~> 1.0.0'
 效果图：  
 
 <img src="./images/show.gif" height="568" width="320" />
+
+原理图：
+
+![](./images/5.png)
