@@ -34,6 +34,7 @@
     [contentView addSubview:dismissButton];
     self.popover                = [[ZZPopoverWindow alloc] init];
     // self.popover.popoverPosition = ZZPopoverPositionRight;
+    self.popover.animationOut = 0.25;
     self.popover.contentView    = contentView;
     self.popover.didShowHandler = ^() {
         NSLog(@"Did show");

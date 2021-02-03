@@ -14,7 +14,6 @@
 
 @interface ZZPopoverView : UIView
 
-//@property (nonatomic) ZZPopoverViewInfo *info;
 @property (nonatomic) UIView *contentView;
 @property (nonatomic, weak) ZZPopoverWindow *containerView;
 @property (nonatomic) UIView *atView;
