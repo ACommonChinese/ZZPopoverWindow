@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version      = '1.0.1'
   s.summary      = 'Pop over view in iOS '
   s.description  = 'ZZPopoverWindow is a convenience tool of popover view iOS/Objective-C'
-  s.homepage     = 'https://github.com/liuxing8807@126.com/ZZPopoverWindow'
+  s.homepage     = 'http://thinkermaster.com/'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "ACommonChinese" => "liuxing8807@126.com" }
   s.source       = { :git => 'https://github.com/liuxing8807@126.com/ZZPopoverWindow.git', :tag => s.version.to_s }
