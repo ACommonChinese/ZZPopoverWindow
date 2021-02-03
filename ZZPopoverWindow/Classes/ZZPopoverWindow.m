@@ -62,16 +62,12 @@
     }
 }
 
-//- (void)setBackgroundColor:(UIColor *)backgroundColor {
-//    [super setBackgroundColor:[UIColor clearColor]];
-//    self.borderColor = backgroundColor;
-//}
-
-//- (UIColor *)backgroundColor {
-//    return self.borderColor;
-//}
-
 - (void)showAtView:(UIView *)atView {
+    if (!self.contentView || self.contentView.frame.size.width < 1 || self.contentView.frame.size.height < 1) {
+        NSLog(@"Content view is invalid, please check it: %@", self.contentView);
+        return;
+    }
+    
     [self makeKeyWindow];
     self.windowLevel = UIWindowLevelAlert;
     self.hidden = NO;
@@ -227,8 +223,10 @@
     [self dismiss];
 }
 
+/**
 - (void)dealloc {
-    // NSLog(@"dealloc");
+    NSLog(@"dealloc, memory ok");
 }
+ */
 
 @end
