@@ -15,6 +15,7 @@ iOS pop视图的封装，支持有箭头和无箭头
     // self.popover.popoverPosition = ZZPopoverPositionRight; // 指定contentView在箭头的哪个方向，默认自己会选择
     // self.popover.backgroundColor = [UIColor blackColor]; // 指定弹框背景色
     // self.popover.showArrow       = NO; // 是否显示箭头，默认YES
+    // self.popover.margin          = 10.0; // 间隔
     self.popover.contentView        = contentView; // 指定contentView
     self.popover.didShowHandler = ^() {
         NSLog(@"Did show");
@@ -30,7 +31,7 @@ iOS pop视图的封装，支持有箭头和无箭头
 关于导入ZZPopoverWindow, 也可以使用：
 
 ```
-pod 'ZZPopoverWindow', '~> 1.0.0'
+pod 'ZZPopoverWindow', '~> 1.0.1'
 ```
 
 效果图：  

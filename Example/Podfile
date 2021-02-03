@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ZZPopoverWindow_Example' do
+  pod 'ZZPopoverWindow', :path => '../'
+
+  target 'ZZPopoverWindow_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

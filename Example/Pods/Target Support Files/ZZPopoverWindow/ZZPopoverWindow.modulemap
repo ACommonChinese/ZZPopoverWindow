@@ -1,0 +1,6 @@
+framework module ZZPopoverWindow {
+  umbrella header "ZZPopoverWindow-umbrella.h"
+
+  export *
+  module * { export * }
+}
