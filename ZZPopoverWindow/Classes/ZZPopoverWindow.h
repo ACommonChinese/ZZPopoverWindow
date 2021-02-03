@@ -84,9 +84,14 @@
 @property (nonatomic, readonly) UIColor *borderColor;
 
 /**
- * 间距，margin仅对无箭头样式有效, 默认 0.0
+ * 间距，弹出控件和 `atView` 之间的间距，默认0.0
  */
 @property (nonatomic, assign) CGFloat margin;
+
+/**
+ * 间距，弹出控件和屏幕之间的最小间距，默认5.0
+ */
+@property (nonatomic, assign) CGFloat minScreenMargin;
 
 - (void)showAtView:(UIView *)atView;
 - (void)showAtView:(UIView *)atView position:(ZZPopoverPosition)position;

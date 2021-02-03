@@ -52,6 +52,7 @@
     self.popoverPosition = ZZPopoverPositionDown;
     self.backgroundColor = [UIColor colorWithRed:.4 green:.4 blue:.4 alpha:.5];
     self.borderColor     = [UIColor whiteColor];
+    self.minScreenMargin = 5.0;
 }
 
 - (void)setShowArrow:(BOOL)showArrow {

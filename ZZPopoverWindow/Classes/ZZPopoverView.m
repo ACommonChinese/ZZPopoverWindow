@@ -13,7 +13,7 @@
 // 角度转弧度 convert degree to radius
 #define DEGREES_TO_RADIANS(degrees) ((M_PI * degrees) / 180)
 
-#define kMinPopMargin 5.0
+#define kMinPopMargin [self minScreenMargin]  // 5.0
 
 @interface ZZPopoverView ()
 
@@ -23,6 +23,7 @@
 @property (nonatomic) CGSize arrowSize;
 @property (nonatomic) UIEdgeInsets contentInset;
 @property (nonatomic) CGFloat margin;
+@property (nonatomic, assign) CGFloat minScreenMargin;
 @end
 
 @implementation ZZPopoverView
@@ -44,6 +45,7 @@
     self.arrowSize     = self.containerView.showArrow == NO ? CGSizeZero : self.containerView.arrowSize;
     self.contentInset  = self.containerView.showArrow == NO ? UIEdgeInsetsZero : self.containerView.contentInset;
     self.margin        = self.containerView.margin;
+    self.minScreenMargin = self.containerView.minScreenMargin;
 }
 
 - (void)setShadow {
