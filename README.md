@@ -3,7 +3,7 @@ iOS pop视图的封装，支持有箭头和无箭头
 
 1. 引入  
 ```
-pod 'ZZPopoverWindow', '~> 1.0.2'
+pod 'ZZPopoverWindow', '~> 1.0.3'
 ```
 
 2. 代码  
