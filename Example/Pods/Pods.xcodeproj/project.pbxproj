@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		026AF13D6753361AFD6B5119D94D8D20 /* ZZPopoverWindow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B848DCDC493A353828EE3D8E4BD521B9 /* ZZPopoverWindow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A138929C839E4863DA356F60A05B20B /* Pods-ZZPopoverWindow_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37682179819C4C26D6A432DC691E5F27 /* Pods-ZZPopoverWindow_Example-dummy.m */; };
-		48D6A73C90F78902D621A49B1E673C84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300D7C9C38226ED88862DA2E4F6D939A /* UIKit.framework */; };
+		3A053D20618F4A66C1D9CB9F54ACEF42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB9340FB50BA6D5B04E6D1D1593077 /* CoreGraphics.framework */; };
 		73D3B927CF70FBBADF0FB5801CF7DE18 /* Pods-ZZPopoverWindow_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6915752C1FCB2112995FECD589216B4F /* Pods-ZZPopoverWindow_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7769604FB293F10DBCAD0299EE22121D /* ZZPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = A702B4A605C1220695F9DC92091A5826 /* ZZPopoverView.m */; };
-		7ED48FF63FF277E49601E8E456F56882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */; };
 		85057F57F29B316D5089CF3D3C062AFF /* ZZPopoverWindow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F941616FA33F48164B312F47506129 /* ZZPopoverWindow-dummy.m */; };
 		882B79042082EB35207AE1D1E134F150 /* ZZPopoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224BE26C9B2F585A6602960908FE2C0 /* ZZPopoverWindow.m */; };
+		AA9F4F30C8913FAC652698B17D62F197 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361EE39606F77A62E58D3A8534B4F6D7 /* UIKit.framework */; };
 		AF0314360100CA516388A501C1826071 /* ZZPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AEB4DD7DFC5502C76AF13257BC4D40D /* ZZPopoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC05BB04EB1D2BD0B55C65CC95D43466 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */; };
 		BD13EA71723DB007AAF1ECF1918B881A /* Pods-ZZPopoverWindow_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E66FD509BE2C9D7ADF8129A175A87E /* Pods-ZZPopoverWindow_Tests-dummy.m */; };
-		BD387F805EBF7588D9F8B67A41B6ECBF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0099C32CD052D2679865CAE3EEEEAB2 /* CoreGraphics.framework */; };
+		C24624B509EC74545D8A48D86236804E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */; };
 		D079E7E83A69EBA95BF2E9D81D8CD85F /* ZZPositionList.h in Headers */ = {isa = PBXBuildFile; fileRef = 738C245E5A2916DB6453F2B576257C81 /* ZZPositionList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE943E249256CD625DDB0086B02F7289 /* ZZPopoverWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F61FFEB8CB9A06D9C156657E9F74DA09 /* ZZPopoverWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E13A8131F4E3619D01BB5C4ACB024FCD /* ZZPositionList.m in Sources */ = {isa = PBXBuildFile; fileRef = CA77A9949964230246C4EBF9421A99BB /* ZZPositionList.m */; };
-		E55497F9B44177681677757018934152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */; };
 		EF37508B2D4EA7B850111DF47F0BD380 /* Pods-ZZPopoverWindow_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D90D71E6580D9347A5ABAE3BBF44FF5 /* Pods-ZZPopoverWindow_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFEC6304D2E601B0074C232A2E9E4243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */; };
+		FABC0901828C4829AAD06E2CC899A4D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,18 +46,19 @@
 /* Begin PBXFileReference section */
 		0224BE26C9B2F585A6602960908FE2C0 /* ZZPopoverWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZPopoverWindow.m; path = ZZPopoverWindow/Classes/ZZPopoverWindow.m; sourceTree = "<group>"; };
 		1F761181AE5581651B63D22328939208 /* Pods-ZZPopoverWindow_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZZPopoverWindow_Example.modulemap"; sourceTree = "<group>"; };
-		233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2D90D71E6580D9347A5ABAE3BBF44FF5 /* Pods-ZZPopoverWindow_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZZPopoverWindow_Example-umbrella.h"; sourceTree = "<group>"; };
-		300D7C9C38226ED88862DA2E4F6D939A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3387B92839CFC940A2C4EF133CB4471C /* ZZPopoverWindow.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZZPopoverWindow.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		361EE39606F77A62E58D3A8534B4F6D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		37682179819C4C26D6A432DC691E5F27 /* Pods-ZZPopoverWindow_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZZPopoverWindow_Example-dummy.m"; sourceTree = "<group>"; };
 		3C15CF8BFFF004D9D485143AC4515FA4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		435EE33D4584AB76FC8F7839583D5F71 /* Pods-ZZPopoverWindow_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZZPopoverWindow_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		440B7C54A5C79F1E0D4C26641C4D3B57 /* Pods-ZZPopoverWindow_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZZPopoverWindow_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		48FE88BA0A89B232151707845BBCF188 /* ZZPopoverWindow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZZPopoverWindow.release.xcconfig; sourceTree = "<group>"; };
+		543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6915752C1FCB2112995FECD589216B4F /* Pods-ZZPopoverWindow_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZZPopoverWindow_Tests-umbrella.h"; sourceTree = "<group>"; };
 		738C245E5A2916DB6453F2B576257C81 /* ZZPositionList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZPositionList.h; path = ZZPopoverWindow/Classes/ZZPositionList.h; sourceTree = "<group>"; };
 		7683886606A05A9019AB8B7804C819A4 /* Pods-ZZPopoverWindow_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZZPopoverWindow_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		77CB9340FB50BA6D5B04E6D1D1593077 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		80F941616FA33F48164B312F47506129 /* ZZPopoverWindow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZZPopoverWindow-dummy.m"; sourceTree = "<group>"; };
 		828CB2FFE23E49C04999CBEDBCD11200 /* ZZPopoverWindow-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZZPopoverWindow-Info.plist"; sourceTree = "<group>"; };
 		846AD9ED24E854D0DDD54D1C608EB33C /* Pods-ZZPopoverWindow_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZZPopoverWindow_Tests.modulemap"; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		96086F3789C5458CED4970ED948D01F2 /* Pods-ZZPopoverWindow_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZZPopoverWindow_Tests-Info.plist"; sourceTree = "<group>"; };
 		967739857F311BCD598CCD45BD4C58E4 /* Pods-ZZPopoverWindow_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZZPopoverWindow_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0099C32CD052D2679865CAE3EEEEAB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		A34E35EACD8DD92E2FD20D3746D83802 /* Pods_ZZPopoverWindow_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZZPopoverWindow_Example.framework; path = "Pods-ZZPopoverWindow_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A572D0FAA113EFB9F20E5249E8D8B695 /* Pods-ZZPopoverWindow_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZZPopoverWindow_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A702B4A605C1220695F9DC92091A5826 /* ZZPopoverView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZPopoverView.m; path = ZZPopoverWindow/Classes/ZZPopoverView.m; sourceTree = "<group>"; };
@@ -91,9 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD387F805EBF7588D9F8B67A41B6ECBF /* CoreGraphics.framework in Frameworks */,
-				BC05BB04EB1D2BD0B55C65CC95D43466 /* Foundation.framework in Frameworks */,
-				48D6A73C90F78902D621A49B1E673C84 /* UIKit.framework in Frameworks */,
+				3A053D20618F4A66C1D9CB9F54ACEF42 /* CoreGraphics.framework in Frameworks */,
+				C24624B509EC74545D8A48D86236804E /* Foundation.framework in Frameworks */,
+				AA9F4F30C8913FAC652698B17D62F197 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E55497F9B44177681677757018934152 /* Foundation.framework in Frameworks */,
+				EFEC6304D2E601B0074C232A2E9E4243 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ED48FF63FF277E49601E8E456F56882 /* Foundation.framework in Frameworks */,
+				FABC0901828C4829AAD06E2CC899A4D5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5246D3CB0F6FF3AC9502D9EA5C5D6540 /* iOS */,
+				37E9A611B7FA8B84E0117394CA54DC92 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,12 +141,12 @@
 			path = "Target Support Files/Pods-ZZPopoverWindow_Example";
 			sourceTree = "<group>";
 		};
-		5246D3CB0F6FF3AC9502D9EA5C5D6540 /* iOS */ = {
+		37E9A611B7FA8B84E0117394CA54DC92 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A0099C32CD052D2679865CAE3EEEEAB2 /* CoreGraphics.framework */,
-				233AEAA73D843C0E91D6A0EF6C3F0E2F /* Foundation.framework */,
-				300D7C9C38226ED88862DA2E4F6D939A /* UIKit.framework */,
+				77CB9340FB50BA6D5B04E6D1D1593077 /* CoreGraphics.framework */,
+				543B56292D357C3C5AAD6AF749B048FA /* Foundation.framework */,
+				361EE39606F77A62E58D3A8534B4F6D7 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -434,77 +434,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		057CCBAADC70F19A4BEB5974DAF5586A /* Debug */ = {
+		0D4078FFEB27DC28FEC875C1878F8CAD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 440B7C54A5C79F1E0D4C26641C4D3B57 /* Pods-ZZPopoverWindow_Tests.debug.xcconfig */;
+			baseConfigurationReference = 435EE33D4584AB76FC8F7839583D5F71 /* Pods-ZZPopoverWindow_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZZPopoverWindow_Tests/Pods-ZZPopoverWindow_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZZPopoverWindow_Tests/Pods-ZZPopoverWindow_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		09C883B2BCA134B469978C9D319F99E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48FE88BA0A89B232151707845BBCF188 /* ZZPopoverWindow.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZZPopoverWindow/ZZPopoverWindow-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZZPopoverWindow/ZZPopoverWindow-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZZPopoverWindow/ZZPopoverWindow.modulemap";
-				PRODUCT_MODULE_NAME = ZZPopoverWindow;
-				PRODUCT_NAME = ZZPopoverWindow;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5309483303642A1D42B06AA2B50840A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8934BDFAD27997EE3344BA044BF0FC3 /* Pods-ZZPopoverWindow_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -527,16 +461,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -559,66 +493,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		916E0404255105F480DC4950B7625F7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -657,12 +532,11 @@
 			};
 			name = Debug;
 		};
-		AFFDCBF7B3DBFB841BCD779992DFD5BE /* Release */ = {
+		4077BB99D37FA3B7E622CF056721CD94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D62076055A4B5F70A49577D04E4BC437 /* Pods-ZZPopoverWindow_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -691,11 +565,43 @@
 			};
 			name = Release;
 		};
-		C29916C6B7211AD62921FA7A70A2E5CB /* Debug */ = {
+		50A35C255B743A5A00B8BD8AFA728690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8934BDFAD27997EE3344BA044BF0FC3 /* Pods-ZZPopoverWindow_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZZPopoverWindow_Example/Pods-ZZPopoverWindow_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZZPopoverWindow_Example/Pods-ZZPopoverWindow_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B1F6A7CAC014CFBC0084AF7E55164B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F38414C8532519399346B9A4422A9F5A /* ZZPopoverWindow.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -722,12 +628,10 @@
 			};
 			name = Debug;
 		};
-		F155D3A6F189069B044794B74ACA67BA /* Debug */ = {
+		6D89011A3904D18E0E611DAD36C449C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 435EE33D4584AB76FC8F7839583D5F71 /* Pods-ZZPopoverWindow_Example.debug.xcconfig */;
+			baseConfigurationReference = 48FE88BA0A89B232151707845BBCF188 /* ZZPopoverWindow.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -736,12 +640,44 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZZPopoverWindow_Example/Pods-ZZPopoverWindow_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ZZPopoverWindow/ZZPopoverWindow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZZPopoverWindow/ZZPopoverWindow-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZZPopoverWindow/ZZPopoverWindow.modulemap";
+				PRODUCT_MODULE_NAME = ZZPopoverWindow;
+				PRODUCT_NAME = ZZPopoverWindow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF3624C86CA311C83295B4CAB94E9070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440B7C54A5C79F1E0D4C26641C4D3B57 /* Pods-ZZPopoverWindow_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZZPopoverWindow_Tests/Pods-ZZPopoverWindow_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZZPopoverWindow_Example/Pods-ZZPopoverWindow_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ZZPopoverWindow_Tests/Pods-ZZPopoverWindow_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -755,14 +691,76 @@
 			};
 			name = Debug;
 		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				916E0404255105F480DC4950B7625F7A /* Debug */,
-				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -770,8 +768,8 @@
 		59DBF8389F71E49ECC4809D8FE0F457B /* Build configuration list for PBXNativeTarget "Pods-ZZPopoverWindow_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				057CCBAADC70F19A4BEB5974DAF5586A /* Debug */,
-				AFFDCBF7B3DBFB841BCD779992DFD5BE /* Release */,
+				AF3624C86CA311C83295B4CAB94E9070 /* Debug */,
+				4077BB99D37FA3B7E622CF056721CD94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -779,8 +777,8 @@
 		BD34ECF5784C0E0CB39D4B5C8502686F /* Build configuration list for PBXNativeTarget "ZZPopoverWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C29916C6B7211AD62921FA7A70A2E5CB /* Debug */,
-				09C883B2BCA134B469978C9D319F99E6 /* Release */,
+				5B1F6A7CAC014CFBC0084AF7E55164B0 /* Debug */,
+				6D89011A3904D18E0E611DAD36C449C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -788,8 +786,8 @@
 		C8C497178B5328AFBD82A70BFACF0D0B /* Build configuration list for PBXNativeTarget "Pods-ZZPopoverWindow_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F155D3A6F189069B044794B74ACA67BA /* Debug */,
-				5309483303642A1D42B06AA2B50840A8 /* Release */,
+				0D4078FFEB27DC28FEC875C1878F8CAD /* Debug */,
+				50A35C255B743A5A00B8BD8AFA728690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

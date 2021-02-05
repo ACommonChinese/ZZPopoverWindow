@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "ZZPopoverView.h"
 
-@interface ZZPopoverWindow : UIWindow
+@interface ZZPopoverWindow : UIView
 
 /**
  *  The contentView positioned in container, default is zero
@@ -92,6 +92,16 @@
  * 间距，弹出控件和屏幕之间的最小间距，默认5.0
  */
 @property (nonatomic, assign) CGFloat minScreenMargin;
+
+/**
+ * 是否正在显示
+ */
+@property (nonatomic, assign) BOOL isShowing;
+
+/**
+ * 父视图，默认 UIApplication.sharedApplication.keyWindow
+ */
+@property (nonatomic, weak) UIView *superAttachView;
 
 - (void)showAtView:(UIView *)atView;
 - (void)showAtView:(UIView *)atView position:(ZZPopoverPosition)position;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'ZZPopoverWindow'
-  s.version      = '1.0.2'
+  s.version      = '1.0.3'
   s.summary      = 'Pop over view in iOS '
   s.description  = 'ZZPopoverWindow is a convenience tool of popover view iOS/Objective-C'
   s.homepage     = 'http://thinkermaster.com/'

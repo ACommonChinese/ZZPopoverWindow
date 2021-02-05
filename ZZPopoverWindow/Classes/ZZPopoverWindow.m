@@ -69,9 +69,17 @@
         return;
     }
     
-    [self makeKeyWindow];
-    self.windowLevel = UIWindowLevelAlert;
+    // ------------------------------------------------------
+    // From 1.0.3 change window to view
+    // [self makeKeyWindow];
+    // self.windowLevel = UIWindowLevelAlert;
     self.hidden = NO;
+    if (self.superAttachView) {
+        [self.superAttachView addSubview:self];
+    } else {
+        [UIApplication.sharedApplication.keyWindow addSubview:self];
+    }
+    // ------------------------------------------------------
     
     /**
     CGFloat contentWidth    = CGRectGetWidth(self.contentView.bounds);
@@ -110,7 +118,12 @@
     
 }
 
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+}
+
 - (void)show {
+    self.isShowing = YES;
     if (self.showArrow || self.popoverPosition == ZZPopoverPositionAny) {
         self.popView.transform = CGAffineTransformMakeScale(0.0, 0.0);
         self.popView.endTransform = CGAffineTransformIdentity;
@@ -211,11 +224,13 @@
     } completion:^(BOOL finished) {
         // [self.contentView removeFromSuperview];
         [self.popView removeFromSuperview];
-        [self resignKeyWindow];
+        //[self resignKeyWindow];
         self.hidden = YES;
+        self.isShowing = NO;
         if (self.didDismissHandler) {
             self.didDismissHandler();
         }
+        [self removeFromSuperview]; // v1.0.3
     }];
 }
 
@@ -224,10 +239,8 @@
     [self dismiss];
 }
 
-/**
-- (void)dealloc {
-    NSLog(@"dealloc, memory ok");
-}
- */
+//- (void)dealloc {
+//    NSLog(@"dealloc, memory ok");
+//}
 
 @end

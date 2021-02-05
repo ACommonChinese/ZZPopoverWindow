@@ -47,6 +47,7 @@
 
 - (void)dismiss {
     [self.popover dismiss];
+    self.popover = nil;
 }
 
 - (IBAction)button2Click:(UIButton *)button {

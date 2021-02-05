@@ -1,5 +1,5 @@
 PODS:
-  - ZZPopoverWindow (1.0.1)
+  - ZZPopoverWindow (1.0.2)
 
 DEPENDENCIES:
   - ZZPopoverWindow (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZZPopoverWindow: e51e556c5cd8e4569c39e7154ec47c10074862f1
+  ZZPopoverWindow: 41e0056414536f38e87d1999d310b7affa20955b
 
 PODFILE CHECKSUM: cf350e46c46fceaa42534c5255300771c688335c
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
